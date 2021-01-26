@@ -9,7 +9,7 @@ var box1 , box3, box4;
 var box2 , box5;
 var ground1;
 var pig1 , log1 , log2 , log3 , log4 , pig2 ;
-var bird1;
+var bird1 , platform;
 
 function setup(){
 
@@ -30,6 +30,7 @@ function setup(){
   log4= new Log(850,140,150,-PI/7);
   bird1= new Bird(400,200);
   ground1 = new Ground(600,380,1200,10);
+  platform = new Ground(150,275,300,200);
 
 }
 
@@ -49,4 +50,5 @@ function draw(){
   log4.display();
   box5.display();
   bird1.display();
+  platform.display();
 }
